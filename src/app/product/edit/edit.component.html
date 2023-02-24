@@ -1,0 +1,21 @@
+
+<div class="container mt-3" style="width: 500px">
+  <h2>Edit form</h2>
+  <form [formGroup]="formEdit" (submit)="editProduct()">
+    <input hidden formControlName="id" ><br>
+    <div class="mb-3 mt-3">
+      <label>Edit Name:</label>
+      <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
+    </div>
+    <div class="mb-3 mt-3">
+      <label>Edit Image:</label>
+      <input type="text" class="form-control" placeholder="Enter Url" formControlName="image">
+    </div>
+    <div class="mb-3 mt-3">
+      <label>Edit Price:</label>
+      <input type="text" class="form-control" placeholder="Enter Price" formControlName="price">
+    </div>
+    <button class="btn btn-primary" routerLink="/show">Back</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
