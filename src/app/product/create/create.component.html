@@ -1,10 +1,10 @@
 <div class="container mt-3" style="width: 500px">
   <h2>Create form</h2>
   <form [formGroup]="formCreate" (submit)="createProduct()">
-    <div class="mb-3 mt-3">
-      <label>Input ID:</label>
-      <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
-    </div>
+<!--    <div class="mb-3 mt-3">-->
+<!--      <label>Input ID:</label>-->
+<!--      <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">-->
+<!--    </div>-->
     <div class="mb-3 mt-3">
       <label>Input Name:</label>
       <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
@@ -16,6 +16,10 @@
     <div class="mb-3 mt-3">
       <label>Input Price:</label>
       <input type="text" class="form-control" placeholder="Enter Price" formControlName="price">
+    </div>
+    <div class="mb-3 mt-3">
+      <label>Input Status:</label>
+      <input type="text" class="form-control" placeholder="Enter Status" formControlName="status">
     </div>
     <button class="btn btn-primary" routerLink="/show">Back</button>
     <button type="submit" class="btn btn-primary">Submit</button>

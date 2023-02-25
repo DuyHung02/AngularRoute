@@ -6,10 +6,7 @@ declare var $: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
   title = 'routing';
 
-  ngOnInit(): void {
-    $('#hung').val('Alo? ua Alo?')
-  }
 }

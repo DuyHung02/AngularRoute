@@ -8,7 +8,8 @@ import {HeaderComponent} from "./header/header.component";
 import { CreateComponent } from './product/create/create.component';
 import { EditComponent } from './product/edit/edit.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import { DeleteComponent } from './product/delete/delete.component';
+import {HttpClientModule} from "@angular/common/http";
+// import { DeleteComponent } from './product/delete/delete.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,13 @@ import { DeleteComponent } from './product/delete/delete.component';
     HeaderComponent,
     CreateComponent,
     EditComponent,
-    DeleteComponent
+    // DeleteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

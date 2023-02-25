@@ -13,6 +13,7 @@
       <th>Name</th>
       <th>Img</th>
       <th>Price</th>
+      <th>Status</th>
       <th>Edit</th>
       <th>Delete</th>
     </tr>
@@ -23,6 +24,7 @@
       <td>{{p.name}}</td>
       <td><img src="{{p.image}}" width="220" height="300"></td>
       <td>{{p.price}}</td>
+      <td>{{p.status}}</td>
       <td>
         <button type="button" class="btn btn-warning" routerLink="/edit/{{p.id}}">Edit</button>
       </td>
