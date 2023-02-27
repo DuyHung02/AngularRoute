@@ -9,7 +9,7 @@ import { CreateComponent } from './product/create/create.component';
 import { EditComponent } from './product/edit/edit.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-// import { DeleteComponent } from './product/delete/delete.component';
+import { DeleteComponent } from './product/delete/delete.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import {HttpClientModule} from "@angular/common/http";
     HeaderComponent,
     CreateComponent,
     EditComponent,
-    // DeleteComponent
+    DeleteComponent
   ],
   imports: [
     BrowserModule,

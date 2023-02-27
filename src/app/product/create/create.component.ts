@@ -28,9 +28,9 @@ export class CreateComponent implements OnInit{
   createProduct() {
     let productNew = this.formCreate.value
     this.productService.create(productNew).subscribe(data =>{
+      this.router.navigate(['/show'])
     }, error => {
     })
-    this.router.navigate(['/show'])
   }
 
 }

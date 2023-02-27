@@ -24,6 +24,10 @@ export class ProductService implements OnInit{
     return this.http.post<Product>('http://localhost:8080/products', product)
   }
 
+  delete(product : Product): Observable<Product> {
+    return this.http.post<Product>('http://localhost:8080/products/delete', product)
+  }
+
   // findProductById(id : number) : Product | undefined {
   //   for (let i = 0; i < this.products.length; i++) {
   //     if (this.products[i].id == id) {

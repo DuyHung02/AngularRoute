@@ -36,8 +36,9 @@ export class EditComponent implements OnInit{
 
   editProduct() {
     let productNew = this.formEdit.value
-    this.productService.create(productNew).subscribe(data =>{})
-    this.router.navigate(['/show'])
+    this.productService.create(productNew).subscribe(data =>{
+      this.router.navigate(['/show'])
+    })
   }
 
 }
